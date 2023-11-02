@@ -35,6 +35,6 @@ models:
     # Config indicated by + and applies to all files under models/example/
     # example:
     #   +materialized: view
-    jaffle_shop:
-      +database: analytics
-      +materialized: table
+    # jaffle_shop:
+    #   +database: analytics
+    #   +materialized: table
