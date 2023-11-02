@@ -38,3 +38,8 @@ models:
     # jaffle_shop:
     #   +database: analytics
     #   +materialized: table
+    marts:
+      core:
+        +materialized: table
+    staging:
+      +materiazlied: view
