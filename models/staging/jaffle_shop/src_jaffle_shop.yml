@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: dbt_snowflake_test
+    database: raw
+    schema: jaffle_shop
+    tables:
+      - name: customers
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+      - name: orders
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
